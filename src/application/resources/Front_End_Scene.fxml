@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="untitled" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="application.Front_End_SceneController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <BarChart fx:id="barchart" layoutX="16.0" layoutY="187.0" prefHeight="187.0" prefWidth="564.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="187.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <TextField fx:id="target_Path" layoutX="14.0" layoutY="31.0" prefHeight="16.0" prefWidth="230.0" promptText="Target Folder Path" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="351.6" AnchorPane.topAnchor="31.0" />
+            <Button fx:id="select_Target" layoutX="269.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#selectTarget" text="Select" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="32.0" />
+            <Separator prefHeight="4.0" prefWidth="589.0" />
+            <TextField fx:id="destination_path" layoutX="14.0" layoutY="66.0" prefHeight="16.0" prefWidth="230.0" promptText="Destination Folder Path" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="351.6" AnchorPane.topAnchor="66.0" />
+            <Button fx:id="select_Destination" layoutX="269.0" layoutY="66.0" mnemonicParsing="false" onMouseClicked="#select_Desctination" text="Select" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="66.0" />
+            <Button fx:id="start" layoutX="351.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#start" prefHeight="162.0" prefWidth="230.0" text="Start" AnchorPane.rightAnchor="14.600000000000023" AnchorPane.topAnchor="18.0" />
+            <ProgressBar fx:id="progress_Bar" layoutX="14.0" layoutY="99.0" prefHeight="22.0" prefWidth="306.0" progress="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="275.6" AnchorPane.topAnchor="99.0" />
+            <Separator layoutX="328.0" layoutY="9.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="5.0" AnchorPane.topAnchor="9.0" />
+            <TextArea fx:id="text_info" layoutX="14.0" layoutY="131.0" prefHeight="56.0" prefWidth="306.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="275.6" AnchorPane.topAnchor="131.0" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

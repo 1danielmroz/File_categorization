@@ -11,7 +11,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Front_End_Controller">
    <children>
       <BarChart fx:id="barchart" layoutX="14.0" layoutY="187.0" prefHeight="199.0" prefWidth="282.0">
         <xAxis>
@@ -21,13 +21,13 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
-      <PieChart fx:id="pieChart" layoutX="296.0" layoutY="187.0" prefHeight="199.0" prefWidth="282.0" />
+      <PieChart fx:id="pieChart" layoutX="296.0" layoutY="187.0" prefHeight="199.0" prefWidth="290.0" />
       <TextField fx:id="target_Path" layoutX="23.0" layoutY="21.0" prefHeight="16.0" prefWidth="230.0" promptText="Target Folder Path" />
-      <Button fx:id="Select_Target" layoutX="268.0" layoutY="21.0" mnemonicParsing="false" text="Select" />
+      <Button fx:id="select_Target" layoutX="268.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#selectTarget" text="Select" />
       <Separator layoutX="8.0" layoutY="185.0" prefHeight="4.0" prefWidth="589.0" />
       <TextField fx:id="destination_path" layoutX="23.0" layoutY="62.0" prefHeight="16.0" prefWidth="230.0" promptText="Destination Folder Path" />
-      <Button fx:id="Select_Destination" layoutX="268.0" layoutY="62.0" mnemonicParsing="false" text="Select" />
-      <Button fx:id="start" layoutX="356.0" layoutY="14.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="230.0" text="Start" />
+      <Button fx:id="select_Destination" layoutX="268.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#select_Desctination" text="Select" />
+      <Button fx:id="start" layoutX="356.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#start" prefHeight="162.0" prefWidth="230.0" text="Start" />
       <ProgressBar fx:id="progress_Bar" layoutX="23.0" layoutY="154.0" prefHeight="22.0" prefWidth="306.0" progress="0.0" />
       <Separator layoutX="339.0" layoutY="5.0" orientation="VERTICAL" prefHeight="180.0" prefWidth="5.0" />
       <TextArea fx:id="text_info" layoutX="23.0" layoutY="95.0" prefHeight="56.0" prefWidth="306.0" />
